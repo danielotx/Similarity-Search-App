@@ -46,6 +46,7 @@ function SideBar() {
     if (id >= data[0] && id <= data.splice(-1, 1))
     setChosenId(id)
     setSimilarIds([])
+    document.getElementById("input-value").value = id
   }
 
 
@@ -63,7 +64,7 @@ function SideBar() {
         <InputGroup className="mb-3">
           <FormControl 
             aria-label="Text input with dropdown button"
-            value={ chosenId } 
+            id='input-value'
             onChange={ ({ target }) =>  handleInputId(target.value) }
           />
         <DropdownButton
