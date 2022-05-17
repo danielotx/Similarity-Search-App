@@ -6,7 +6,7 @@ const getAll = async () => {
     method: 'get',
     url: 'https://mycelia.azure-api.net/id/productimages?mode=complete',
     headers: { 
-      'Auth': '412862363959448ea131ec1e9cd400e3',
+      'Auth': 'fa48e535eaa44ef49f37557751eeffd4',
       'Content-Type': 'application-json'
     }
   };
@@ -23,7 +23,7 @@ const getById = async (id, topK) => {
     method: 'get',
     url: `https://mycelia.azure-api.net/similar/id/productimages?id=${id}&top_k=${topK}`,
     headers: { 
-      'Auth': '412862363959448ea131ec1e9cd400e3',
+      'Auth': 'fa48e535eaa44ef49f37557751eeffd4',
       'Content-Type': 'application/json'
     }
   };
